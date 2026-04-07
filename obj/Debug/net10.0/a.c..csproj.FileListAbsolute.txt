@@ -1,0 +1,15 @@
+C:\Users\Xavier Harding\traversal\a.c\bin\Debug\net10.0\a.c..exe
+C:\Users\Xavier Harding\traversal\a.c\bin\Debug\net10.0\a.c..deps.json
+C:\Users\Xavier Harding\traversal\a.c\bin\Debug\net10.0\a.c..runtimeconfig.json
+C:\Users\Xavier Harding\traversal\a.c\bin\Debug\net10.0\a.c..dll
+C:\Users\Xavier Harding\traversal\a.c\bin\Debug\net10.0\a.c..pdb
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..AssemblyInfoInputs.cache
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..AssemblyInfo.cs
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..csproj.CoreCompileInputs.cache
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..sourcelink.json
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..dll
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\refint\a.c..dll
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..pdb
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\a.c..genruntimeconfig.cache
+C:\Users\Xavier Harding\traversal\a.c\obj\Debug\net10.0\ref\a.c..dll
