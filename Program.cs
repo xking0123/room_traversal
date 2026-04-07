@@ -1,0 +1,2 @@
+﻿//make a game like battle system but have player bounce around between various kinds of rooms rather than battles
+//have 1 room be a combat room, have 1 room be a room where you can heal, have 1 room where you can quit
