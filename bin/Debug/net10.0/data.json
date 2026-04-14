@@ -1,0 +1,53 @@
+{
+  "player": {
+    "Name": "Wanderer",
+    "Health": 50,
+    "MaxHealth": 50,
+    "Mana": 30,
+    "MaxMana": 30,
+    "Attack": 20,
+    "Defense": 20,
+    "DefenseBuff": 0
+  },
+  "Battles": [
+    {
+      "Enemy": {
+        "Name": "San the n00b",
+        "Health": 15,
+        "MaxHealth": 15,
+        "Mana": 0,
+        "MaxMana": 0,
+        "Attack": 5,
+        "Defense": 5,
+        "DefenseBuff": 0
+      },
+      "Name": "Opponent 1: San the n00b"
+    },
+    {
+      "Enemy": {
+        "Name": "Pan the casual",
+        "Health": 20,
+        "MaxHealth": 20,
+        "Mana": 20,
+        "MaxMana": 20,
+        "Attack": 15,
+        "Defense": 15,
+        "DefenseBuff": 0
+      },
+      "Name": "Opponent 2: Pan the casual"
+    },
+    {
+      "Enemy": {
+        "Name": "Tan the EXPERT",
+        "Health": 40,
+        "MaxHealth": 40,
+        "Mana": 40,
+        "MaxMana": 40,
+        "Attack": 25,
+        "Defense": 25,
+        "DefenseBuff": 0
+      },
+      "Name": "Opponent 3: Tan the EXPERT"
+    }
+  ]
+}

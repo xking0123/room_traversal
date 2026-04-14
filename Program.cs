@@ -5,6 +5,12 @@
 //have 1 room be a combat room, have 1 room be a room where you can heal, have 1 room where you can quit
 using System.Text.Json;
 
+public class gameState
+{
+    public Char player { get; set; }
+    public List<Battle> Battles { get; set; }
+}
+
 //put in player stats for battles
 public class Char
 {
@@ -48,6 +54,41 @@ public class Battle
     }
 }
 
+public class StaticData
+{
+    public List<Room> Rooms { get; set; }
+}
+
+public class Room
+{
+    public string Description { get; set; } = "";
+    public List<Choice> Choices { get; set; } = [];
+}
+
+public class Choice
+{
+    public string Description { get; set; } = "";
+    public string FlavorText { get; set; } = "";
+
+    public TransitionTarget? TransitionTarget { get; set; }
+    public StatIncrease? StatIncrease { get; set; }
+    public StatusEffect? StatusEffect { get; set; }
+}
+
+public class StatIncrease {}
+public enum StatusEffect
+{
+    Poisoned,
+    Burned,
+    Blinded,
+}
+
+public enum TransitionTarget
+{
+    Battle,
+    Escape,
+}
+
 public static partial class Program
 {
     enum EnemyAction { Attack, Defend, Magic } //actions enemy can take
@@ -63,6 +104,16 @@ public static partial class Program
             new Battle("Opponent 2: Pan the casual", new Char("Pan the casual", 20, 20, 15, 15)),
             new Battle("Opponent 3: Tan the EXPERT", new Char("Tan the EXPERT", 40, 40, 25, 25)),
         };
+
+        //converting player and player to json string
+        string jsonString = JsonSerializer.Serialize(new gameState
+        {
+            player = player,
+            Battles = battles
+        }, new JsonSerializerOptions { WriteIndented = true });
+
+        //making new json data file
+        File.WriteAllText("data.json", jsonString);
 
         Console.Clear();
         Console.WriteLine("WELCOME TO THE VOID HOTEL... we hope you enjoy your stay!");
@@ -308,7 +359,7 @@ public static partial class Program
                 Console.WriteLine("CONGRATULATIONS!");
             }
 
-            if(player.Health <= 0)
+            if (player.Health <= 0)
             {
                 resetGame();
             }

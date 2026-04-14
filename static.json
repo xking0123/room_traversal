@@ -1,0 +1,19 @@
+{
+    "Rooms": [
+        {
+            "Description": "Your doom!",
+            "Choices": [
+                {
+                    "Description": "Do nothing",
+                    "FlavorText": "You do nothing and are punished.",
+                    "StatusEffect": "Poisoned"
+                },
+                {
+                    "Description": "Escape",
+                    "FlavorText": "You escape!",
+                    "TransitionTarget": "Escape"
+                }
+            ]
+        }
+    ]
+}
