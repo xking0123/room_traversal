@@ -3,8 +3,7 @@
 
 //make a game like battle system but have player bounce around between various kinds of rooms rather than battles
 //have 1 room be a combat room, have 1 room be a room where you can heal, have 1 room where you can quit
-using System.Net;
-using System.Runtime.CompilerServices;
+using System.Text.Json;
 
 //put in player stats for battles
 public class Char
@@ -55,7 +54,7 @@ public static partial class Program
     public static void Main()
     {
         //making user for battles
-        Char player = new Char("Void Explorer", 50, 30, 20, 20);
+        Char player = new Char("Wanderer", 50, 30, 20, 20);
 
         //make list of (multiple?) battles to randomly generate in the combat room- actions will only be attack, defend, magic
         List<Battle> battles = new List<Battle>
@@ -206,7 +205,7 @@ public static partial class Program
         if (player.Health < 0)
             player.Health = 0;
         player.DefenseBuff = 0;
-        Console.WriteLine($"{enemy.Name}hit you for {damage} damage... You have {player.Health} health left... SPIN BACK");
+        Console.WriteLine($"{enemy.Name} hit you for {damage} damage... You have {player.Health} health left... SPIN BACK");
         Console.WriteLine("press anything to go to next turn");
         Console.ReadKey();
     }
@@ -235,7 +234,7 @@ public static partial class Program
         if (player.Health < 0)
             player.Health = 0;
         player.DefenseBuff = 0;
-        Console.WriteLine($"{enemy.Name}hit you for {damage} damage... You have {player.Health} health left... SPIN BACK");
+        Console.WriteLine($"{enemy.Name} hit you for {damage} damage... You have {player.Health} health left... SPIN BACK");
         Console.WriteLine("press anything to go to next turn");
         Console.ReadKey();
     }
