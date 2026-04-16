@@ -1,5 +1,4 @@
 ﻿//expand?: data format, json- use for data storing. (expand game to be like... more profesisional dungeon crawler)
-//chatgpt- ask for ideas to turn this into proper rougelike system? (ik ai=bad but... shut up...)
 
 //make a game like battle system but have player bounce around between various kinds of rooms rather than battles
 //have 1 room be a combat room, have 1 room be a room where you can heal, have 1 room where you can quit
@@ -89,7 +88,9 @@ public enum Scene
     Escape,
     Recover
 }
-//set enum as list of possiblities for rooms to be made after initial room
+
+//put all rooms/room data in json and then import file data in here...
+//blue {} in static.json represent each individual room
 
 public static partial class Program
 {
@@ -107,6 +108,7 @@ public static partial class Program
             new Battle("Opponent 1: San the n00b", new Char("San the n00b", 15, 0, 5, 5)),
             new Battle("Opponent 2: Pan the casual", new Char("Pan the casual", 20, 20, 15, 15)),
             new Battle("Opponent 3: Tan the EXPERT", new Char("Tan the EXPERT", 40, 40, 25, 25)),
+            new Battle("Opponent 4: GOD", new Char("GOD?!", 100, 100, 50, 50))
         };
 
         //converting player and player to json string
