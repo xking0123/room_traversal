@@ -6,12 +6,12 @@
                 {
                     "Description": "Do nothing",
                     "FlavorText": "You do nothing and are punished.",
-                    "StatusEffect": "Poisoned"
+                    "StatusEffect": 0
                 },
                 {
                     "Description": "Escape",
                     "FlavorText": "You escape!",
-                    "TransitionTarget": "Escape"
+                    "Scene": 1
                 }
             ]
         }

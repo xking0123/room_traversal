@@ -70,7 +70,7 @@ public class Choice
     public string Description { get; set; } = "";
     public string FlavorText { get; set; } = "";
 
-    public TransitionTarget? TransitionTarget { get; set; }
+    public Scene? TransitionTarget { get; set; }
     public StatIncrease? StatIncrease { get; set; }
     public StatusEffect? StatusEffect { get; set; }
 }
@@ -83,17 +83,21 @@ public enum StatusEffect
     Blinded,
 }
 
-public enum TransitionTarget
+public enum Scene
 {
     Battle,
     Escape,
+    Recover
 }
+//set enum as list of possiblities for rooms to be made after initial room
 
 public static partial class Program
 {
     enum EnemyAction { Attack, Defend, Magic } //actions enemy can take
     public static void Main()
     {
+        var data = JsonSerializer.Deserialize<StaticData>(File.ReadAllText("static.json"));
+        Console.WriteLine(data.Rooms[0].Description);
         //making user for battles
         Char player = new Char("Wanderer", 50, 30, 20, 20);
 
@@ -115,7 +119,7 @@ public static partial class Program
         //making new json data file
         File.WriteAllText("data.json", jsonString);
 
-        Console.Clear();
+        
         Console.WriteLine("WELCOME TO THE VOID HOTEL... we hope you enjoy your stay!");
         Console.WriteLine("here's a master key... explore the rooms as you see fit. just don't get lost in the void now :)");
 
@@ -128,7 +132,7 @@ public static partial class Program
 
         while (true)
         {//put room generation inside while loop so that it can continuosly generate new room unless you leave hotel
-            Console.Clear();
+            
 
             //get random index (randomly generating a room)
             int index = rnd.Next(rooms.Count); //rnd used here
