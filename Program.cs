@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//data way w/json (making life easier)
+
 using System.Text.Json;
 var rooms = JsonSerializer.Deserialize<List<Room>>(File.ReadAllText("room.json"))!;
 Console.WriteLine($"There are {rooms.Count} rooms.");
@@ -87,3 +88,5 @@ class Enemy
     public required string DeathFlavor { get; set; }
     public required string KilledByFlavor { get; set; }
 }
+
+//work: maybe try to add actual battling instead of just yes no for killing enemies...
