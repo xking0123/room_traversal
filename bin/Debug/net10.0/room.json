@@ -1,0 +1,735 @@
+[
+    {
+        "Description": "You enter a room of doom.",
+        "Prompt": "Do you face your fears and commit to a leap of faith?",
+        "YesChoice": {
+            "Prompt": "I am prepared to die.",
+            "Flavor": "The pit was a facade, and you stubbed your toe on it.",
+            "Effects": {
+                "Flavor": "You die of embarrassment."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I'm too young to die!",
+            "Flavor": "A pigman pushes you in and you feel air whipping past your face.",
+            "Effects": {
+                "Flavor": "You die of falling."
+            }
+        }
+    },
+    {
+        "Description": "A room filled with the smell of fresh bread. A loaf sits on a pedestal, golden and warm.",
+        "Prompt": "Do you eat the bread?",
+        "YesChoice": {
+            "Prompt": "I have not eaten in days.",
+            "Flavor": "It tastes exactly like your grandmother's kitchen. A single tear rolls down your cheek.",
+            "Effects": {
+                "Flavor": "You gain +2 nostalgia and forget why you came here."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Bread on a pedestal is never just bread.",
+            "Flavor": "Smart. The bread slowly opens one eye and glares at you as you pass.",
+            "Effects": {
+                "Flavor": "You earn the Bread's grudging respect."
+            }
+        }
+    },
+    {
+        "Description": "A long corridor lined with portraits. Every painting's eyes follow you. At the end, a mirror shows a reflection that is one step behind.",
+        "Prompt": "Do you wave at your reflection?",
+        "YesChoice": {
+            "Prompt": "Hello, other me.",
+            "Flavor": "It waves back. Then it waves again. And again. It won't stop waving.",
+            "Effects": {
+                "Flavor": "You are now haunted by enthusiasm."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I refuse to acknowledge this.",
+            "Flavor": "Your reflection sighs deeply, folds its arms, and sits down on the floor in protest.",
+            "Effects": {
+                "Flavor": "Your self-image takes a hit."
+            }
+        }
+    },
+    {
+        "Description": "A cozy library. An armchair sits beside a roaring fire. A cat is asleep on the chair.",
+        "Prompt": "Do you move the cat?",
+        "YesChoice": {
+            "Prompt": "I need that chair.",
+            "Flavor": "The cat opens one eye. You feel a chill that has nothing to do with temperature.",
+            "Effects": {
+                "Flavor": "You are cursed with perpetual discomfort in all future seating."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "The cat was here first.",
+            "Flavor": "You sit on the cold floor. The cat purrs. Something about this feels right.",
+            "Effects": {
+                "Flavor": "The cat will remember this. That might be good."
+            }
+        }
+    },
+    {
+        "Description": "A damp cave. A troll sits under a stone bridge, eating what appears to be a very small sandwich.",
+        "Prompt": "Do you ask the troll for a bite of the sandwich?",
+        "YesChoice": {
+            "Prompt": "That smells incredible, actually.",
+            "Flavor": "The troll stares at you for a long, horrible moment, then hands you half.",
+            "Effects": {
+                "Flavor": "It was a good sandwich. You and the troll are now friends."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I will not beg a troll for food.",
+            "Flavor": "You attempt to sneak past. The troll doesn't notice you. It is very absorbed in its sandwich.",
+            "Effects": {
+                "Flavor": "You are fine. You are also a little hungry."
+            }
+        }
+    },
+    {
+        "Description": "A vast ballroom. A single chandelier flickers overhead. Dozens of skeletons stand frozen mid-waltz.",
+        "Prompt": "Do you play the piano in the corner?",
+        "YesChoice": {
+            "Prompt": "Someone should finish this dance.",
+            "Flavor": "The skeletons resume their waltz instantly. They are better dancers than you expected.",
+            "Effects": {
+                "Flavor": "You have accidentally hosted a very successful party."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I am not a music box for the undead.",
+            "Flavor": "Wise. The piano has too many keys and not enough of them are the right ones.",
+            "Effects": {
+                "Flavor": "The skeletons remain still. They look disappointed."
+            }
+        }
+    },
+    {
+        "Description": "A stone room with a single lever on the wall. A sign above it reads: DO NOT PULL.",
+        "Prompt": "Do you pull the lever?",
+        "YesChoice": {
+            "Prompt": "Signs like this are basically invitations.",
+            "Flavor": "A distant rumbling. Then silence. Then a cake descends from the ceiling on a rope.",
+            "Effects": {
+                "Flavor": "The cake is real. No one is more surprised than you."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I respect signage.",
+            "Flavor": "You leave the lever alone. The sign seems to nod approvingly. Signs cannot nod.",
+            "Effects": {
+                "Flavor": "Nothing happens. You feel strangely good about this."
+            }
+        }
+    },
+    {
+        "Description": "A fog-filled room. Something large breathes in the darkness ahead. It sounds asleep.",
+        "Prompt": "Do you try to sneak past?",
+        "YesChoice": {
+            "Prompt": "Silence is survival.",
+            "Flavor": "You tiptoe successfully. Halfway through, you sneeze. The breathing pauses. Then resumes.",
+            "Effects": {
+                "Flavor": "You survive on luck alone, as is tradition."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I announce myself like a person of honor.",
+            "Flavor": "You clear your throat. The breathing stops. Two enormous eyes open in the dark.",
+            "Effects": {
+                "Flavor": "It turns out the creature just wanted someone to talk to. This takes a while."
+            }
+        }
+    },
+    {
+        "Description": "A pristine white room. In the center, a button. The button is red. The button says DEFINITELY DO NOT PRESS.",
+        "Prompt": "Do you press the button?",
+        "YesChoice": {
+            "Prompt": "Red buttons are my destiny.",
+            "Flavor": "A brief jingle plays. A flag pops up that says 'OOPS.'",
+            "Effects": {
+                "Flavor": "Something somewhere has gone wrong. You will never know what."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I have read enough to know better.",
+            "Flavor": "You walk past. The button dims slightly, as though sulking.",
+            "Effects": {
+                "Flavor": "You have wounded the button's pride. It will recover."
+            }
+        }
+    },
+    {
+        "Description": "A room knee-deep in gold coins. A dragon is asleep atop the pile, wearing a small nightcap.",
+        "Prompt": "Do you take a coin?",
+        "YesChoice": {
+            "Prompt": "Just one. It won't notice.",
+            "Flavor": "The dragon's nostril twitches. Its eyes remain closed. It whispers, without waking: 'I noticed.'",
+            "Effects": {
+                "Flavor": "You keep the coin. You also keep the anxiety."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I value my life over currency.",
+            "Flavor": "You back out slowly. The dragon's tail curls into what might be a thumbs-up.",
+            "Effects": {
+                "Flavor": "The dragon respects your restraint. This is worth more than a coin."
+            }
+        }
+    },
+    {
+        "Description": "A room filled entirely with doors. Every door is labeled 'EXIT' except one, which is labeled 'NOT THE EXIT.'",
+        "Prompt": "Do you try the NOT THE EXIT door?",
+        "YesChoice": {
+            "Prompt": "Reverse psychology is a two-way street.",
+            "Flavor": "It is the exit. You were right to be suspicious of signs.",
+            "Effects": {
+                "Flavor": "You escape. Your faith in irony is rewarded."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I will take the logical door.",
+            "Flavor": "All the EXIT doors lead to a second room filled entirely with doors.",
+            "Effects": {
+                "Flavor": "You are now in door purgatory."
+            }
+        }
+    },
+    {
+        "Description": "A greenhouse room, warm and humid. Beautiful flowers bloom in every color. A small sign reads: DO NOT SMELL THE BLACK ONES.",
+        "Prompt": "Do you smell the black flowers?",
+        "YesChoice": {
+            "Prompt": "Beauty is meant to be experienced.",
+            "Flavor": "The scent is indescribable — like lightning, old books, and regret.",
+            "Effects": {
+                "Flavor": "You briefly understand the universe. Then you forget all of it."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I have made my peace with curiosity.",
+            "Flavor": "You admire them from a distance. They seem to bloom more brightly for the attention.",
+            "Effects": {
+                "Flavor": "The black flowers remember you fondly."
+            }
+        }
+    },
+    {
+        "Description": "A sparse room. A wizard stands in the center, holding a hat. He offers to guess your weight.",
+        "Prompt": "Do you let him guess?",
+        "YesChoice": {
+            "Prompt": "Show me what you've got, wizard.",
+            "Flavor": "He guesses exactly. To the ounce. He pumps his fist and whispers 'yes.'",
+            "Effects": {
+                "Flavor": "He needed this win. Something about the encounter feels oddly wholesome."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "A wizard's games are never just games.",
+            "Flavor": "He deflates visibly. He hasn't gotten one right all century.",
+            "Effects": {
+                "Flavor": "You feel a little guilty. He was so hopeful."
+            }
+        }
+    },
+    {
+        "Description": "A small room with a trapdoor in the floor. Muffled laughter drifts up from below.",
+        "Prompt": "Do you open the trapdoor?",
+        "YesChoice": {
+            "Prompt": "I want to know what's funny.",
+            "Flavor": "A goblin looks up at you mid-giggle and screams. You also scream. The goblin screams again.",
+            "Effects": {
+                "Flavor": "Mutual screaming is a form of bonding, apparently."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Whatever is laughing down there can stay down there.",
+            "Flavor": "The laughter continues. It gets louder. Then stops abruptly. The silence is worse.",
+            "Effects": {
+                "Flavor": "You will never know. This will bother you."
+            }
+        }
+    },
+    {
+        "Description": "An icy cavern. A frozen knight stands at attention, encased in a block of ice. His expression is deeply apologetic.",
+        "Prompt": "Do you thaw the knight?",
+        "YesChoice": {
+            "Prompt": "No one should stand in ice for eternity.",
+            "Flavor": "He thaws instantly. He apologizes. He apologizes again. He is still apologizing.",
+            "Effects": {
+                "Flavor": "You have freed a very sorry knight. He follows you now."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "He looks frozen for a reason.",
+            "Flavor": "You leave him as is. His apologetic expression seems to intensify.",
+            "Effects": {
+                "Flavor": "Whatever he did, he has a very long time to feel bad about it."
+            }
+        }
+    },
+    {
+        "Description": "A cluttered workshop. Tools hang on every wall. In the corner, a small automaton winds itself up and looks at you expectantly.",
+        "Prompt": "Do you give the automaton a task?",
+        "YesChoice": {
+            "Prompt": "Fetch me something useful.",
+            "Flavor": "It whirrs away and returns with a single sock. It looks very proud.",
+            "Effects": {
+                "Flavor": "You have one sock. It's actually a good sock."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I don't trust clockwork things.",
+            "Flavor": "It winds down slowly, still watching you, hope fading from its tiny glass eyes.",
+            "Effects": {
+                "Flavor": "You feel terrible about this for the rest of the dungeon."
+            }
+        }
+    },
+    {
+        "Description": "A room that smells of ozone. Lightning arcs between two metal pillars. Scratched into the floor: STAND BETWEEN THE PILLARS FOR POWER.",
+        "Prompt": "Do you stand between the pillars?",
+        "YesChoice": {
+            "Prompt": "Power is worth the risk.",
+            "Flavor": "The lightning passes through you. Every hair on your body stands at attention. You feel tremendous.",
+            "Effects": {
+                "Flavor": "You gain the ability to slightly shock people during handshakes. You cannot turn this off."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I believe in electricity and also in not touching it.",
+            "Flavor": "You walk around the pillars. A faint voice from the floor inscription says 'reasonable.'",
+            "Effects": {
+                "Flavor": "You survive. Your hair looks nice."
+            }
+        }
+    },
+    {
+        "Description": "An ornate room with a single throne. A crown rests on the throne. No one is around.",
+        "Prompt": "Do you put on the crown?",
+        "YesChoice": {
+            "Prompt": "I was born for this.",
+            "Flavor": "It fits perfectly. Somewhere, a fanfare plays briefly, then cuts out like someone forgot to finish it.",
+            "Effects": {
+                "Flavor": "You are technically royalty now. No one enforces this."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Unclaimed crowns are never unclaimed.",
+            "Flavor": "You sit on the throne without the crown. It is extremely comfortable. You lose six minutes.",
+            "Effects": {
+                "Flavor": "You are rested but uncrowded. Both are valid outcomes."
+            }
+        }
+    },
+    {
+        "Description": "A rickety room that seems to be the inside of a giant stomach. The walls pulse gently.",
+        "Prompt": "Do you ask to be digested?",
+        "YesChoice": {
+            "Prompt": "When in Rome.",
+            "Flavor": "The walls seem to consider this. A rumbling that sounds almost like 'alright then.'",
+            "Effects": {
+                "Flavor": "You are digested. It is surprisingly peaceful. You emerge somewhere else."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I am not food.",
+            "Flavor": "You assert your non-food status firmly. The walls pulse in what feels like a shrug.",
+            "Effects": {
+                "Flavor": "A door appears. The stomach respected your boundaries."
+            }
+        }
+    },
+    {
+        "Description": "A darkened room. A fortune teller sits behind a crystal ball. She says she already knows what you will choose.",
+        "Prompt": "Do you ask her what you will choose?",
+        "YesChoice": {
+            "Prompt": "Tell me my fate.",
+            "Flavor": "She says 'yes.' You realize that was the answer to your question.",
+            "Effects": {
+                "Flavor": "You are trapped in a self-fulfilling prophecy of mild inconvenience."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I make my own choices.",
+            "Flavor": "She nods slowly. 'That's what they all say,' she says. 'Right before they ask.'",
+            "Effects": {
+                "Flavor": "You leave immediately. She calls after you: 'See you next time.'"
+            }
+        }
+    },
+    {
+        "Description": "A swamp room indoors, somehow. A frog on a lily pad stares at you with ancient, knowing eyes.",
+        "Prompt": "Do you kiss the frog?",
+        "YesChoice": {
+            "Prompt": "Classic protocol.",
+            "Flavor": "The frog becomes a prince. He is very confused and underdressed for a dungeon.",
+            "Effects": {
+                "Flavor": "You have a prince now. He is more trouble than the frog was."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I do not kiss strangers, regardless of species.",
+            "Flavor": "The frog blinks. It seems relieved. It returns to staring at the middle distance.",
+            "Effects": {
+                "Flavor": "The frog has already forgotten you. This is fine."
+            }
+        }
+    },
+    {
+        "Description": "A room at a crossroads. A merchant sells one item: a mystery box. He assures you it is worth it.",
+        "Prompt": "Do you buy the mystery box?",
+        "YesChoice": {
+            "Prompt": "I love a gamble.",
+            "Flavor": "You open it. Inside is a slightly smaller mystery box.",
+            "Effects": {
+                "Flavor": "Inside that one is a note that says 'nice try.' You keep both boxes."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Mystery is another word for disappointment.",
+            "Flavor": "The merchant sighs and opens it himself. It contains exactly what you would have wanted.",
+            "Effects": {
+                "Flavor": "He keeps it. He looks at you like you deserve this."
+            }
+        }
+    },
+    {
+        "Description": "A narrow room. The ceiling is slowly descending. You have time, but not a lot of it.",
+        "Prompt": "Do you try to hold up the ceiling?",
+        "YesChoice": {
+            "Prompt": "I am stronger than architecture.",
+            "Flavor": "It stops. You stand there straining. Nothing else happens. It just... stops.",
+            "Effects": {
+                "Flavor": "Your arms hurt. The ceiling stays put. You may have broken the trap."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I will find another way.",
+            "Flavor": "You sprint for the far door. It opens. The ceiling freezes one inch from the floor behind you.",
+            "Effects": {
+                "Flavor": "You escape. You also learned you're faster than you thought."
+            }
+        }
+    },
+    {
+        "Description": "A serene room with a koi pond in the center. The fish are large, orange, and watching you with unsettling focus.",
+        "Prompt": "Do you feed the fish?",
+        "YesChoice": {
+            "Prompt": "Every creature deserves a snack.",
+            "Flavor": "You toss in a crumb. The fish converge instantly. The water churns. Silence returns. The fish resume their positions.",
+            "Effects": {
+                "Flavor": "The pond is suspiciously still. You did not ask what those fish eat."
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Something about those fish is wrong.",
+            "Flavor": "You back away slowly. One fish mouths what looks like the word 'please.'",
+            "Effects": {
+                "Flavor": "You leave. You still think about those fish sometimes."
+            }
+        }
+    },
+    {
+        "Description": "A dimly lit tavern room, frozen mid-brawl. Chairs hang in the air, mugs suspended mid-spill. The moment you enter, everything resumes.",
+        "Prompt": "Do you join the brawl?",
+        "YesChoice": {
+            "Prompt": "I never needed a reason to fight.",
+            "Flavor": "You wade in swinging. Several combatants redirect their attention to you.",
+            "Effects": {
+                "Flavor": "You have made enemies the old-fashioned way: immediately.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Belligerent Barfly",
+                        "InitialHealth": 20,
+                        "DeathFlavor": "He goes down clutching his mug, muttering something about his tab.",
+                        "KilledByFlavor": "He lands one magnificent haymaker and you see several extra moons."
+                    },
+                    {
+                        "Name": "Tavern Bouncer",
+                        "InitialHealth": 55,
+                        "DeathFlavor": "He collapses slowly, like a proud building being demolished.",
+                        "KilledByFlavor": "He grabs you by the collar and introduces you to the floor personally."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I'll watch from a safe corner.",
+            "Flavor": "You find a stool near the wall. A stray chair clips your ear anyway.",
+            "Effects": {
+                "Flavor": "Neutrality has its limits in a brawl.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Misdirected Drunk",
+                        "InitialHealth": 15,
+                        "DeathFlavor": "He passes out before hitting the ground. Technically a win.",
+                        "KilledByFlavor": "He falls on you completely by accident. He is very heavy."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A graveyard room. Headstones jut from the stone floor. The epitaphs all read variations of 'Should have run.'",
+        "Prompt": "Do you pay your respects and linger?",
+        "YesChoice": {
+            "Prompt": "The dead deserve acknowledgment.",
+            "Flavor": "You bow your head. The ground appreciates this. Then it stops appreciating and starts trembling.",
+            "Effects": {
+                "Flavor": "Respect, it turns out, is an invitation down here.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Restless Skeleton",
+                        "InitialHealth": 30,
+                        "DeathFlavor": "It collapses into a neat pile of bones, which somehow look more at peace than before.",
+                        "KilledByFlavor": "It rattles you to death with surprising enthusiasm for something with no muscles."
+                    },
+                    {
+                        "Name": "Grave Warden",
+                        "InitialHealth": 70,
+                        "DeathFlavor": "He slumps against a headstone. His own epitaph writes itself.",
+                        "KilledByFlavor": "He buries you. In his defense, that is literally his job."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I move through graveyards briskly.",
+            "Flavor": "You speed-walk through, eyes forward. Something claws at your ankle and misses.",
+            "Effects": {
+                "Flavor": "Almost. You keep moving.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Ankle-Grabbing Ghoul",
+                        "InitialHealth": 25,
+                        "DeathFlavor": "It dissolves into a wisp, muttering that it almost had you.",
+                        "KilledByFlavor": "It drags you under with a grip that defies its wispy form."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A throne room occupied by a very small king sitting in a very large chair. He points at you and declares you a threat to the realm.",
+        "Prompt": "Do you dispute the charge?",
+        "YesChoice": {
+            "Prompt": "I am no such thing.",
+            "Flavor": "He slams his tiny fist on the armrest and calls for his guards. The guards are not small.",
+            "Effects": {
+                "Flavor": "Due process has failed you.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Royal Guard",
+                        "InitialHealth": 60,
+                        "DeathFlavor": "He salutes as he falls, loyal to the end.",
+                        "KilledByFlavor": "He runs you through with the formal efficiency of someone who has done this before."
+                    },
+                    {
+                        "Name": "The Tiny King",
+                        "InitialHealth": 10,
+                        "DeathFlavor": "He slides off the throne dramatically. His crown lands on you. It fits.",
+                        "KilledByFlavor": "Against all odds, he defeats you personally. He celebrates for a long time."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I plead guilty to whatever he needs.",
+            "Flavor": "He squints. He didn't expect that. He confers with his armrest. He lets you go with a warning.",
+            "Effects": {
+                "Flavor": "Diplomacy: occasionally just agreeing with small royalty.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Suspicious Court Jester",
+                        "InitialHealth": 35,
+                        "DeathFlavor": "He cartwheels one last time and doesn't come back up.",
+                        "KilledByFlavor": "He jingles you to death. No one believed this was possible, including him."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A sweltering forge room. Weapons line the walls — all of them unfinished. A massive smith works at the anvil, back turned.",
+        "Prompt": "Do you take one of the unfinished weapons from the wall?",
+        "YesChoice": {
+            "Prompt": "Half a sword is better than none.",
+            "Flavor": "The smith's hammer stops mid-swing. He turns around slowly. His eye twitches.",
+            "Effects": {
+                "Flavor": "You have disturbed his system.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Furious Blacksmith",
+                        "InitialHealth": 80,
+                        "DeathFlavor": "He crashes to the floor like a dropped anvil, which ironically he is standing next to.",
+                        "KilledByFlavor": "He uses the unfinished blade on you. He finishes it on the way out."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I respect craftsmanship and personal space.",
+            "Flavor": "You watch him work. He is extraordinary. He hands you something small without looking up.",
+            "Effects": {
+                "Flavor": "A finished throwing knife. He nods once. You are dismissed.",
+                "PossibleEnemies": []
+            }
+        }
+    },
+    {
+        "Description": "A flooded room, knee-deep in black water. Something large circles beneath the surface, just visible.",
+        "Prompt": "Do you wade through?",
+        "YesChoice": {
+            "Prompt": "Standing water has never stopped me.",
+            "Flavor": "The circling thing notices the ripples your legs make. It finds this interesting.",
+            "Effects": {
+                "Flavor": "You have advertised your location to whatever this is.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Dungeon Lurker",
+                        "InitialHealth": 65,
+                        "DeathFlavor": "It surfaces one last time, blinks at you slowly, and sinks.",
+                        "KilledByFlavor": "It pulls you under with a grip like cold iron. The water goes still."
+                    },
+                    {
+                        "Name": "Pale Eel",
+                        "InitialHealth": 20,
+                        "DeathFlavor": "It sparks once and goes dark, drifting to the surface belly-up.",
+                        "KilledByFlavor": "It shocks you into the water. You float there briefly before the rest happens."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I will find another route or wait it out.",
+            "Flavor": "You wait. The thing circles. Eventually it loses interest and drifts to the far end. You cross quickly.",
+            "Effects": {
+                "Flavor": "Patience rewarded. Your boots are still ruined.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Pale Eel",
+                        "InitialHealth": 20,
+                        "DeathFlavor": "It sparks once and goes dark, drifting to the surface belly-up.",
+                        "KilledByFlavor": "It shocks you into the water. You float there briefly before the rest happens."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A narrow canyon-like room. Eyes glow from crevices in both walls. Many eyes. Blinking at different intervals.",
+        "Prompt": "Do you make yourself look bigger and shout?",
+        "YesChoice": {
+            "Prompt": "Confidence is half of survival.",
+            "Flavor": "Some of the eyes retreat. Three pairs do not. They were never going to.",
+            "Effects": {
+                "Flavor": "Partial success. You deal with the remainder.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Cave Stalker",
+                        "InitialHealth": 45,
+                        "DeathFlavor": "It drops from the wall and lies still, eyes finally closed.",
+                        "KilledByFlavor": "It was behind you the entire time. It was very patient."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Shouting in a cave seems inadvisable.",
+            "Flavor": "You creep through in silence. The eyes track you the whole way. At the end, something drops from the ceiling.",
+            "Effects": {
+                "Flavor": "Silence did not help as much as hoped.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Cave Stalker",
+                        "InitialHealth": 45,
+                        "DeathFlavor": "It drops from the wall and lies still, eyes finally closed.",
+                        "KilledByFlavor": "It was behind you the entire time. It was very patient."
+                    },
+                    {
+                        "Name": "Ceiling Clinger",
+                        "InitialHealth": 30,
+                        "DeathFlavor": "It peels off and falls with a wet finality.",
+                        "KilledByFlavor": "Falling from the ceiling turns out to be a highly effective attack."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A courtyard room open to a false sky. A scarecrow stands in the center, arms out. It is not stuffed with straw.",
+        "Prompt": "Do you investigate the scarecrow?",
+        "YesChoice": {
+            "Prompt": "Something is wrong with it and I need to know what.",
+            "Flavor": "Up close, you see it breathing. Slowly. Then less slowly.",
+            "Effects": {
+                "Flavor": "You have woken something up by looking at it too hard.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "The Scarecrow",
+                        "InitialHealth": 50,
+                        "DeathFlavor": "It returns to its post and goes still. The breathing stops. You're not sure it was ever alive.",
+                        "KilledByFlavor": "It wraps its arms around you with the slow inevitability of something that has all the time in the world."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "Scarecrows are not my problem.",
+            "Flavor": "You give it a wide berth. Its head rotates to follow you. Just its head.",
+            "Effects": {
+                "Flavor": "You leave faster than intended.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "The Scarecrow",
+                        "InitialHealth": 50,
+                        "DeathFlavor": "It returns to its post and goes still. The breathing stops. You're not sure it was ever alive.",
+                        "KilledByFlavor": "It wraps its arms around you with the slow inevitability of something that has all the time in the world."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Description": "A mess hall. Goblin soldiers eat noisily at long tables, unaware of you. The exit is on the far side.",
+        "Prompt": "Do you attempt to walk through disguised as one of them?",
+        "YesChoice": {
+            "Prompt": "Confidence and a slouch will carry me.",
+            "Flavor": "It works for twelve incredible seconds. Then someone asks you to pass the slop. You pass it wrong.",
+            "Effects": {
+                "Flavor": "There is a correct way to pass goblin slop. You did not do it.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Goblin Soldier",
+                        "InitialHealth": 25,
+                        "DeathFlavor": "He faceplants into his bowl. His comrades pause, then keep eating.",
+                        "KilledByFlavor": "He stabs you with a fork. It is somehow very effective."
+                    },
+                    {
+                        "Name": "Goblin Sergeant",
+                        "InitialHealth": 50,
+                        "DeathFlavor": "He bellows an order no one follows and then falls over.",
+                        "KilledByFlavor": "He issues a formal order for your death and personally carries it out."
+                    }
+                ]
+            }
+        },
+        "NoChoice": {
+            "Prompt": "I will cause a distraction instead.",
+            "Flavor": "You hurl something through the far window. The goblins stampede toward it. You walk through calmly.",
+            "Effects": {
+                "Flavor": "Flawless. Except one goblin didn't go. He stayed. He's looking at you.",
+                "PossibleEnemies": [
+                    {
+                        "Name": "Suspicious Goblin",
+                        "InitialHealth": 20,
+                        "DeathFlavor": "He points at you accusingly one final time and then slumps.",
+                        "KilledByFlavor": "He was right to be suspicious. He is very smug about this until you die."
+                    }
+                ]
+            }
+        }
+    }
+]
