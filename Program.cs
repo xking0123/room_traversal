@@ -3,6 +3,8 @@
 using System.Text.Json;
 var rooms = JsonSerializer.Deserialize<List<Room>>(File.ReadAllText("room.json"))!;
 Console.WriteLine($"There are {rooms.Count} rooms.");
+
+//generating random rooms
 var rand = new Random();
 for (var n = rooms.Count - 1; n > 0; n--)
 {
@@ -12,10 +14,14 @@ for (var n = rooms.Count - 1; n > 0; n--)
     rooms[n] = value;
 }
 Console.WriteLine($"There are now {rooms.Count} rooms.");
+
+//going through all the rooms one by one
 foreach (var room in rooms)
 {
     var effects = DoRoom(room);
     Console.WriteLine(effects.Flavor);
+
+    //implementing 'battles' in some of the rooms
     if (0 < effects.PossibleEnemies.Count)
     {
         var enemyIndex = rand.Next(0, effects.PossibleEnemies.Count);
@@ -41,6 +47,8 @@ foreach (var room in rooms)
         }
     }
 }
+
+//printing out everything relating to each individual room
 Effects DoRoom(Room room)
 {
     Console.WriteLine(room.Description + "\n");
@@ -63,6 +71,8 @@ Effects DoRoom(Room room)
         }
     }
 }
+
+//data stuffy
 class Room
 {
     public required string Description { get; set; }
