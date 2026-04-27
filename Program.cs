@@ -146,12 +146,13 @@ foreach (var room in rooms)
             player.XP += enemyData.XPReward;
             Console.WriteLine($"+{enemyData.GoldReward} gold, +{enemyData.XPReward} XP!");
 
-            //calling level up after rewards after getting rewards
+            //calling level up after getting rewards
             CheckLevelUp(player);
         }
         else
         {
             Console.WriteLine(enemyData.KilledByFlavor);
+            //return statement so we can jump back to this json game loop and not the ogProgram one
             return;
         }
     }
@@ -196,7 +197,6 @@ class Choice
     public required Effects Effects { get; set; }
 }
 
-//added in healing and mana restoring so playing can get stats back like in og battle system
 class Effects
 {
     public required string Flavor { get; set; }
@@ -207,8 +207,6 @@ class Effects
     public bool IsShop { get; set; } = false;
 }
 
-//work: maybe try to add actual battling instead of just yes no for killing enemies...
-//adding in mana, attack, and defense to implement actual battle system
 class Enemy
 {
     public required string Name { get; set; }
