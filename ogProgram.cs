@@ -17,6 +17,11 @@ public class Char
     public int Defense { get; set; }
     public int DefenseBuff { get; set; } = 0;
 
+    //expanding to make things more rougelike-like...
+    public int Gold { get; set; } = 0;
+    public int Level { get; set; } = 1;
+    public int XP { get; set; } = 0;
+
     public Char(string name, int maxHealth, int maxMana, int attack, int defense)
     {
         Name = name;
@@ -265,11 +270,9 @@ public static partial class Program
     //running actual battle
     static void RunBattle(Char player, Battle battle)
     {
-        bool battleActive = true;
-        while (battleActive && player.Health > 0)
+        while (battle.Enemy.Health > 0 && player.Health > 0)
         {
             Console.Clear();
-
             DisplayBattle(player, battle.Enemy);
 
             ConsoleKey key = Console.ReadKey(true).Key;
@@ -286,7 +289,7 @@ public static partial class Program
                     break;
 
                 default:
-                    Console.WriteLine("ok magic man... whatever you say");
+                    Console.WriteLine("invalid input...");
                     break;
             }
 
@@ -294,22 +297,19 @@ public static partial class Program
             if (battle.Enemy.Health > 0)
             {
                 EnemyTurn(player, battle.Enemy);
-                if (player.Health <= 0)
-                {
-                    battleActive = false;
-                }
             }
 
             //if enemy ded
             if (battle.Enemy.Health <= 0)
             {
-                battleActive = false;
                 Console.WriteLine("CONGRATULATIONS!");
             }
 
+            //making it so my JSON code can run fine...
             if (player.Health <= 0)
             {
-                resetGame();
+                Console.WriteLine("You have been defeated...");
+                return; // exit RunBattle and go back to your JSON loop
             }
         }
     }
