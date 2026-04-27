@@ -1,5 +1,5 @@
 ﻿//expansion: add shops, add exp/gold to json, death = restart, randomized runs
-//chatgpt: turn game into proper roguelike...
+//another expand: move all data from ogProgram to here so only 1 file?
 
 //data way w/json (making life easier)
 //battle system pulled from ogProgram.cs so look there for battle logic...
@@ -78,7 +78,7 @@ Console.WriteLine($"There are now {rooms.Count} rooms.");
 //implement player and put it outside of loop to make sure it 'persists' (think like og battle system in ogProgram)
 Char player = new Char("Wanderer", 50, 30, 20, 20);
 
-//converting JSON enemy data to actual Char to use for battles
+//converting JSON enemy data to actual Char to use for battles, like Char clone in og battle system...?
 //moved outside of loop to avoid recreating enemy with every instance of an enemy...?
 Char ConvertToChar(Enemy enemy)
 {
